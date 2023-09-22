@@ -1,0 +1,30 @@
+#include <algorithm>
+#include <cmath>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+  const int m = 3,n = 4;
+  int a[m][n] =  {{1,4,7,10},
+                  {2,5,8,11},
+                  {3,6,9,12}};
+
+  // matrix search - O(m+n)
+  int k = 0;
+  int i = m-1 , j = 0, flag = 0;
+  while((i>=0 && j>=0) && (i<m && j<n)){
+    if(a[i][j]<k){
+        j++;
+    }
+    else if (a[i][j]>k){
+      i--;
+    }
+    else{
+      flag = 1;
+      break;
+    }
+  }
+  cout<<flag<<endl;
+  
+}
