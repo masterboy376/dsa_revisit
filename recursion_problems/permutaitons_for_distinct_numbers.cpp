@@ -39,7 +39,7 @@ int main() {
 
   // using stl lib
   int n1;cin>>n1;
-  vector<int> a1(n);
+  vector<int> a1(n1);
   for(auto &i : a1){
     cin>>i;
   }
