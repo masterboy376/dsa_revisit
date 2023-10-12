@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
+// subarray and subsequence
 // number of subarrays = nC2 + n
 // number of subsequence = 2^n
 
