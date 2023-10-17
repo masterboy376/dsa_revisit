@@ -20,6 +20,7 @@ class queue{
     }
 
     void push(int x){
+        // enqueue
         if(back==size-1){
             cout<<"queue full"<<endl;
             return;
@@ -32,6 +33,7 @@ class queue{
     }
 
     void pop(){
+        // dequeue
         if(front==-1 || front>back){
             cout<<"queue empty"<<endl;
             return;
