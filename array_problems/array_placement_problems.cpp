@@ -88,5 +88,21 @@ int main() {
 
   //smallest positive missing number
   // we can store negative indexs in an array by declearing 2*1e6+2 length
+  const int C = 1e6+2;
+  bool check[C];
+  for(int i =0; i<C; i++) check[i]=false;
+  for(int i = 0; i<n; i++){
+    if(a[i]>=0){
+      check[a[i]]=true;
+    }
+  }
+  int result = -1;
+  for(int i = 1; i<C; i++){
+    if(!check[i]){
+      result = i;
+      break;
+    }
+  }
+  cout<<result<<endl;
   
 }
